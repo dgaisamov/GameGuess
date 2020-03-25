@@ -37,18 +37,6 @@ public class UserRegistrator {
         return new Scanner(System.in).nextLine();
     }
 
-    public static boolean checkAge(int age) {
-        if (age <= 18) {
-            System.out.println("Ваш возраст меньше 18, вход запрещен...");
-            return false;
-        } else {
-            System.out.println("Возраст больше 18, добро пожаловать!");
-            return true;
-        }
-    }
-
-    public static int regAge() {
-        System.out.println("Введите возраст:");
-        return new Scanner(System.in).nextInt();
-    }
+    
+    
 }
