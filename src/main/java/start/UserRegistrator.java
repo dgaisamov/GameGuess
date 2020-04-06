@@ -1,42 +1,40 @@
+/*
 package start;
 
-public class UserRegistrator {
+import java.util.Scanner;
+import java.io.*;
 
-    public static void main(String[] args) {
-        String nameTwoWords = "Dima Usachev";
-        String nameWithNumber = "Dima1";
-        String nameCorrect = "Dima";
-        System.out.println(checkName(nameTwoWords));
-        System.out.println(checkName(nameWithNumber));
-        System.out.println(checkName(nameCorrect));
-    }
+ class UserRegistrator {
+    throws java.io.IOException;
 
-    public static boolean checkName(String name) {
-        if (name.contains(" ")) {
-            System.out.println("Имя должно состоять из 1 слова");
-            return false;
-        } else if (name.matches(".*\\d.*")) {
-            System.out.println("Имя содержит цифры");
-            return false;
-        } else {
-            System.out.println("Имя корректно, продолжайте...");
-            return true;
-        }
-    }
 
-    public void setName(String name) {
+     public static boolean checkName(String name) {
+         if (name.contains(" ")) {
+             System.out.println("Имя должно состоять из 1 слова");
+             return false;
+         } else if (name.matches(".*\\d.*")) {
+             System.out.println("Имя содержит цифры");
+             return false;
+         } else {
+             System.out.println("Имя корректно, продолжайте...");
+             return true;
+         }
+     }
 
-        if (name == null || !name.matches("[a-zA-Z]+")) {
-        try {
-            throw new UserRegistratorValidException();
-        } catch (UserRegistratorValidException ex) {
-            System.out.println("Поле Имя... не должно содержать числа ");
+     public void setName(String name) {
 
-    public static String regName() {
-        System.out.println("Введите имя:");
-        return new Scanner(System.in).nextLine();
-    }
+         if (name == null || !name.matches("[a-zA-Z]+")) {
+             try {
+                 throw new UserRegistratorValidException();
+             } catch (UserRegistratorValidException ex) {
+                 System.out.println("Поле Имя... не должно содержать числа ");
 
-    
-    
-}
+                 public static String regName () {
+                     System.out.println("Введите имя:");
+                     return new Scanner(System.in).nextLine();
+                 }
+             }
+         }
+     }
+ }
+*/
